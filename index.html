@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KANNABIRAN CATERING SERVICES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #fff9f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #a83279;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .selection-block, .menu-section {
+      background-color: #ffe6f0;
+      margin: 20px auto;
+      padding: 15px;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-section h2 {
+      color: #a83279;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+
+    .contact {
+      background: #f9f9f9;
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 2px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      background: #eee;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .order-btn {
+      background-color: #a83279;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 1.2em;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .order-btn:hover {
+      background-color: #8c2963;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KANNABIRAN CATERING SERVICES</h1>
+    <p>Marriage & Function Catering in Tiruppur, Dharapuram, Karur & Surroundings</p>
+  </header>
+
+  <section class="selection-block">
+    <label for="month">Choose Tamil Month:</label>
+    <select id="month">
+      <option>Chithirai</option>
+      <option>Vaikasi</option>
+      <option>Aani</option>
+      <option>Aadi</option>
+      <option>Avani</option>
+      <option>Purattasi</option>
+      <option>Aippasi</option>
+      <option>Karthigai</option>
+      <option>Margazhi</option>
+      <option>Thai</option>
+      <option>Maasi</option>
+      <option>Panguni</option>
+    </select>
+  </section>
+
+  <section class="selection-block">
+    <label for="date">Choose Date:</label>
+    <input type="date" id="date" onchange="displayDay()">
+    <div class="day-display" id="dayDisplay"></div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Welcome Drink</h2>
+    <select multiple>
+      <option>Lemon Mint juice</option>
+      <option>Lemon Ginger juice</option>
+      <option>Orange Juice</option>
+      <option>Pineapple Juice</option>
+      <option>Watermelon Juice</option>
+      <option>Soft Drink (Fruti/Mirinda/Pepsi/Coke)</option>
+    </select>
+  </section>
+
+  <section class="menu-section">
+    <h2>Soups</h2>
+    <select multiple>
+      <option>Tomato Soup</option>
+      <option>Baby Corn Soup</option>
+    </select>
+  </section>
+
+  <section class="menu-section">
+    <h2>Veg Starters</h2>
+    <select multiple>
+      <option>Gobi Manchurian</option>
+      <option>Baby Corn Manchurian</option>
+      <option>Mushroom Manchurian</option>
+      <option>Mini Samosa</option>
+      <option>Veg Roll</option>
+      <option>Schezwan Roll</option>
+    </select>
+  </section>
+
+  <section class="menu-section">
+    <h2>Indian Bread</h2>
+    <select multiple>
+      <option>Poori</option>
+      <option>Chapathi</option>
+      <option>Rumali Roti</option>
+      <option>Masala Roti</option>
+    </select>
+  </section>
+
+  <section class="menu-section">
+    <h2>Veg Gravy</h2>
+    <select multiple>
+      <option>Paneer Butter Masala</option>
+      <option>Kadai Paneer</option>
+      <option>Mix Veg Kuruma</option>
+      <option>Channa Masala</option>
+      <option>Kadai Sabji</option>
+      <option>Navaratna Kurma</option>
+      <option>Veg Thavabaji</option>
+      <option>Veg Shahi Kurma</option>
+      <option>Green Peas Masala</option>
+      <option>Dal Makani</option>
+    </select>
+  </section>
+
+  <section class="menu-section">
+    <h2>Flavoured Rice</h2>
+    <select multiple>
+      <option>Veg Biriyani</option>
+      <option>Vegetable Pulav</option>
+      <option>Peas Pulav</option>
+      <option>Jeera Rice</option>
+      <option>Bisibele Bath</option>
+      <option>Tomato Bath</option>
+      <option>Coconut Rice</option>
+      <option>Lemon Rice</option>
+      <option>Puliyogare</option>
+      <option>Pudina Rice</option>
+      <option>Menthya Rice</option>
+      <option>Vaangi Bath</
